@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Dogcard,Weather} from './dogcard';
+//import Name from './Name';
+function App(){
+    return(
+        <>
+            hello
+            <nav><Weather/></nav>
+            <div>
+            <Dogcard name ='bruno' Image='https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg?cs=srgb&dl=pexels-pixabay-257540.jpg&fm=jpg'/>
+            <Dogcard name ='tiger' Image='https://th.bing.com/th/id/OIP.kh9lyCfew3Bw26mVTxs_MQHaEo?rs=1&pid=ImgDetMain'/>
+            
+            </div>
+           
+        </>
+    );
 }
 
 export default App;
